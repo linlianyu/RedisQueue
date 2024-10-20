@@ -4,13 +4,17 @@ from utils.time_util import get_now_time_str
 
 class JobInfo:
     def __init__(self):
-        self.name = None
-        self.data = None
-        self.queue = None
+        self.name = ''
+        self.data = ''
+        self.queue = ''
 
         # 需要初始化
-        self.submit_time = None
-        self.status = None
+        self.submit_time = ''
+        self.status = ''
+
+        # 任务开始时间
+        self.start_time = ''
+        self.finish_time = ''
 
     def init(self, name, data, queue):
         self.name = name
